@@ -39,7 +39,7 @@ sub checkDir{
         {
             mkdir $dirpath, 0755 or die "cannot make new dir: $!";
             print colored(['cyan'], "[CLINDEX]: Successfully created \'$dirpath\'\n");
-            &createIndex;
+            &createFile;
         }
         else
         {
